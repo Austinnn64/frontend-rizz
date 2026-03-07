@@ -400,6 +400,8 @@
     <div class="letter-top-rule"></div>
     <div class="letter-date">A letter written for you, with love</div>
 
+    <div class="letter-sign" id="greeting" style="margin-bottom: 24px; font-size: clamp(1.8rem, 4vw, 2.4rem);">Dear Senem,</div>
+
     <p class="letter-para" id="p1">
       When I first saw you, it felt like I was gazing into eternity. The cosmic stardust that occupies the universe lives in your eyes. They shine like a serene and infinite ocean of water. Every time I see you, it feels like new stars have been created somewhere in the universe, and if I could build all those stars into a constellational galaxy, I would create one so that we could have all the time in the world to spend together.
     </p>
@@ -544,8 +546,8 @@
   }
 
   function revealParagraphs() {
-    const items = ['p1','d1','p2','d2','p3','d3','p4','p5','sign'];
-    const delays = [200, 600, 750, 1100, 1250, 1650, 1800, 2200, 2550];
+    const items = ['greeting','p1','d1','p2','d2','p3','d3','p4','p5','sign'];
+    const delays = [100, 400, 800, 950, 1300, 1450, 1850, 2000, 2400, 2750];
     items.forEach((id, i) => {
       setTimeout(() => {
         const el = document.getElementById(id);
