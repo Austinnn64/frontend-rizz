@@ -279,7 +279,6 @@
   .letter-corner.tl { top: 14px; left: 18px; }
   .letter-corner.tr { top: 14px; right: 18px; transform: scaleX(-1); }
 
-  /* gold top border */
   .letter-top-rule {
     width: 100%;
     height: 1px;
@@ -288,7 +287,6 @@
     opacity: 0.6;
   }
 
-  /* date / salutation area */
   .letter-date {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 0.65rem;
@@ -299,7 +297,6 @@
     opacity: 0.8;
   }
 
-  /* body text – staggered reveal */
   .letter-para {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1rem, 2.4vw, 1.15rem);
@@ -497,6 +494,8 @@
     for (let i = 0; i < 12; i++) setTimeout(spawnPetal, i * 800);
     setInterval(spawnPetal, 1800);
   })();
+
+  console.log("Austin will die soon")
 
   let opened = false;
 
